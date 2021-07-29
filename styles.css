@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,900&display=swap');
+
+
+/* PAGE BODY */
+body{
+    background-color: #fca311;
+}
+
+/* HANGMAN TITLE */
+
+#hang{
+    display: flex;
+    position: absolute;
+    font-size: 80px;
+    left: 10%;
+    bottom: 40%;
+    font-family: 'Nosifer', cursive;
+    color: #ffffff;
+}
+#man{
+    display: flex;
+    position: absolute;
+    font-size: 80px;
+    right: 10%;
+    bottom: 40%;
+    font-family: 'Nosifer', cursive;
+    color: #ffffff;
+}
+
+#guess{
+    display: flex;
+    position: absolute;
+    left: 30%;
+    bottom: 33%;
+    font-family: 'Nosifer', cursive;
+    color: rgb(0, 0, 0);
+}
+
+/* GAME */
+
+#word{
+    display: flex;
+    position: absolute;
+    top: 57.5%;
+    left: 50%;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 35px;
+}
+
+.text{
+    color: #14213d;
+    border-bottom: 5px solid #ffffff;
+    letter-spacing: 4px;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+
+#wrongGuess{
+    display: flex;
+    position: absolute;
+    font-size: 20px;
+    right: 7.5%;
+    top: 2.5%;
+    font-family: 'Nosifer', cursive;
+    color: #14213d;
+}
+
+#wrongGuessCount{
+    display: flex;
+    position: absolute;
+    font-size: 20px;
+    right: 5%;
+    top: 2.5%;
+    font-family: 'Nosifer', cursive;
+    color: #ffffff;
+}
+
+/* FIGURE */
+
+#head-outer{
+    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 52.5%;
+    background-color: black;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+#head-inner{
+    display: flex;
+    position: absolute;
+    top: 15.75%;
+    left: 52.85%;
+    background-color: #E5E5E5;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+#body-stick{
+    display: flex;
+    position: absolute;
+    top: 27%;
+    left: 55.25%;
+    background-color: black;
+    width: 7px;
+    height: 80px;
+}
+
+#left-leg{
+    display: flex;
+    position: absolute;
+    top: 37.5%;
+    left: 53.75%;
+    background-color: black;
+    width: 7px;
+    height: 80px;
+    border-radius: 5px;
+    transform: rotate(30deg);
+}
+
+#right-leg{
+    display: flex;
+    position: absolute;
+    top: 37.5%;
+    left: 56.75%;
+    background-color: black;
+    width: 7px;
+    height: 80px;
+    border-radius: 5px;
+    transform: rotate(-30deg);
+}
+
+#left-hand{
+    display: flex;
+    position: absolute;
+    top: 24.5%;
+    left: 58.25%;
+    background-color: black;
+    width: 7px;
+    height: 80px;
+    border-radius: 5px;
+    transform: rotate(-90deg);
+}
+
+#right-hand{
+    display: flex;
+    position: absolute;
+    top: 24.5%;
+    left: 52.15%;
+    background-color: black;
+    width: 7px;
+    height: 80px;
+    border-radius: 5px;
+    transform: rotate(90deg);
+}
+
+#stick-figure{
+    border-radius: 20px;
+    padding: 175px;
+    margin-top: 25px;
+    margin-left: 38.25%;
+    margin-right: 50%;
+    border-radius: 5px;
+    background-color: #E5E5E5;
+    border-color: black;
+    border-style: solid;
+    border-width: 2.5px;
+    border-radius: 10px;
+}
+
+#pole{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 42.25%;
+    background-color: black;
+    width: 7px;
+    height: 300px;
+    border-radius: 5px;
+}
+#pole-vertical{
+    display: flex;
+    position: absolute;
+    top: -52px;
+    left: 50.85%;
+    background-color: black;
+    width: 7px;
+    height: 240px;
+    border-radius: 5px;
+    transform: rotate(90deg);
+}
+
+#pole-base{
+    display: flex;
+    position: absolute;
+    top: 330px;
+    left: 42%;
+    background-color: black;
+    width: 15px;
+    height: 75px;
+    border-radius: 5px;
+    transform: rotate(90deg);
+}
+
+#rope{
+    border-radius: 5px;
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 55.1%;
+    background-color: black;
+    width: 10px;
+    height: 34.25px;
+    transform: rotate(0deg);
+}
+
+/* KEYBOARD */
+
+#keyboardBase{
+    display: flex;
+    position: absolute;
+    left: 24.5%;
+    bottom: 7.75%;
+    background-color: #14213D;
+    border-color: black;
+    border-style: solid;
+    border-width: 2.5px;
+    border-radius: 10px;
+    padding: 60px;
+    height: 50px;
+    width: 600px;
+}
+
+.keyboardKeys{
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    border-radius: 2.5px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #FCA311;
+    margin-left: 7.5%;
+}
+
+#q{
+    bottom: 25%;
+    left: 20%; 
+}
+#w{bottom: 25%;
+    left: 25%; }
+#e{bottom: 25%;
+    left: 30%; }
+#r{bottom: 25%;
+    left: 35%; }
+#t{bottom: 25%;
+    left: 40%; }
+#y{bottom: 25%;
+    left: 45%; }
+#u{bottom: 25%;
+    left: 50%; }
+#i{bottom: 25%;
+    left: 55%; }
+#o{bottom: 25%;
+    left: 60%; }
+#p{bottom: 25%;
+    left: 65%; }
+#a{bottom: 17.5%;
+    left: 22.5%; }
+#s{bottom: 17.5%;
+    left: 27.5%; }
+#d{bottom: 17.5%;
+    left: 32.5%; }
+#f{bottom: 17.5%;
+    left: 37.5%; }
+#g{bottom: 17.5%;
+    left: 42.5%; }
+#h{bottom: 17.5%;
+    left: 47.5%; }
+#j{bottom: 17.5%;
+    left: 52.5%; }
+#k{bottom: 17.5%;
+    left: 57.5%; }
+#l{bottom: 17.5%;
+    left: 62.5%; }
+#z{bottom: 10%;
+    left: 25%; }
+#x{bottom: 10%;
+    left: 30%; }
+#c{bottom: 10%;
+    left: 35%; }
+#v{bottom: 10%;
+    left: 40%; }
+#b{bottom: 10%;
+    left: 45%; }
+#n{bottom: 10%;
+    left: 50%; }
+#m{bottom: 10%;
+    left: 55%; }   
+
+/* LOSING SCREEN */
+
+#losing-screen{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 95%;
+    height: 100%;
+    width: 100%;
+    background-color: #14213D;
+}
+#losing-message{
+    display: flex;
+    position: absolute;
+    left: 25%;
+    bottom: 40%;
+    font-size: 100PX;
+    font-family: 'Nosifer', cursive;
+    color: #FFFFFF;
+}
+#losing-message2{
+    display: flex;
+    position: absolute;
+    left: 25%;
+    bottom: 25%;
+    font-size: 25PX;
+    font-family: 'Nosifer', cursive;
+    color: #FFFFFF;
+}
+#losing-message3{
+    display: flex;
+    position: absolute;
+    left: 55%;
+    bottom: 25%;
+    font-size: 25PX;
+    font-family: 'Nosifer', cursive;
+    color: #FCA311;
+}
+
+/* WINNING SCREEN */
+
+#winning-screen{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 95%;
+    height: 100%;
+    width: 100%;
+    background-color: #FCA311;
+}
+
+#winning-message1{
+    display: flex;
+    position: absolute;
+    left: 25%;
+    bottom: 40%;
+    font-size: 100PX;
+    font-family: 'Nosifer', cursive;
+    color: #FFFFFF;
+}
+#winning-message2{
+    display: flex;
+    position: absolute;
+    left: 25%;
+    bottom: 25%;
+    font-size: 25PX;
+    font-family: 'Nosifer', cursive;
+    color: #14213D;
+}
+#winning-message3{
+    display: flex;
+    position: absolute;
+    left: 64%;
+    bottom: 25%;
+    font-size: 25PX;
+    font-family: 'Nosifer', cursive;
+    color: #FFFFFF;
+}
+
+/* MEANING */
+
+#meaning{
+    border-style: none;
+    padding: 5px;
+    display: flex;
+    position: absolute;
+    left: 65%;
+    bottom: 20%;
+    border-radius: 5px;
+    font-size: 10PX;
+    font-family: 'Nosifer', cursive;
+    color: #14213D;
+    background-color: #E5E5E5;
+    border-color: #14213D;
+    border-style: solid;
+}
+
+#word-meaning{
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 40px;
+    font-family: 'Work Sans', sans-serif;
+    align-items: center;
+    justify-content: center;
+    color: #E5E5E5;
+    margin: 150px;
+}
+
+#meaning-background{
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    border-radius: 10px;
+    opacity: 100%;
+    height: 80%;
+    width: 80%;
+    background-color: #14213d;
+    border-color: #E5E5E5;
+    border-style: solid;
+}
+
+#word-meaning-word{
+    z-index: 50;
+    display: flex;
+    position: absolute;
+    left: 42.5%;
+    top: 125px;
+    font-size: 50PX;
+    font-family: 'Nosifer', cursive;
+    color: #fca311;
+}
+
+/* BACKSPACE */
+
+#backspace{
+    display: flex;
+    position: absolute;
+    right: 15%;
+    bottom: 16.5%;
+    width: 50px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: #14213D;
+    border-style: solid;
+    padding: 8px;
+}
+
+/* RESET BUTTON */
+
+#reset{
+    z-index: 10;
+    border-style: none;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    left: 45%;
+    bottom: 10%;
+    border-radius: 5px;
+    font-size: 25PX;
+    font-family: 'Nosifer', cursive;
+    color: #14213D;
+    background-color: #FCA311;
+    border-color: #E5E5E5;
+    border-style: solid;
+}
+
+#rese, #meanin, #word-meaning-wor, #word-meanin{
+    display: none;
+}
+
+#resete{
+    border-style: none;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    left: 45%;
+    bottom: 10%;
+    border-radius: 5px;
+    font-size: 25PX;
+    font-family: 'Nosifer', cursive;
+    color: #fca311;
+    background-color: #14213d;
+    border-color: #E5E5E5;
+    border-style: solid;
+}

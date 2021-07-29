@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANGMAN</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- FIGURE -->
+
+    <H1 id="hang">HANG</H1>
+    <h1 id="man"> MAN </h1>
+    <div id="stick-figure"></div>
+    <div id="head-oute"></div>
+    <div id="head-inne"></div>
+    <div id="body-stic"></div>
+    <div id="left-han"></div>
+    <div id="right-han"></div>
+    <div id="left-le"></div>
+    <div id="right-le"></div>
+<div class="hangstand">
+    <div id="pole"></div>
+    <div id="pole-vertical"></div>
+    <div id="pole-base"></div>
+    <div id="rope"></div>
+</div>
+
+
+<!-- WORD -->
+
+    <h3 id="guess"> GUESS THE WORD </h3>
+    <div class="word" id="word">
+    <div class="text" id="letter1"></div>
+    <div class="text" id="letter2"></div>
+    <div class="text" id="letter3"></div>
+    <div class="text" id="letter4"></div>
+    <div class="text" id="letter5"></div>
+    <div class="text" id="letter6"></div>
+    <div class="text" id="letter7"></div>
+    <div class="text" id="letter8"></div>
+    <div class="text" id="letter9"></div>
+    <div class="text" id="letter10"></div>
+    <div class="text" id="letter11"></div>
+    <div class="text" id="letter12"></div>
+</div>
+
+<!-- WRONG GUESS -->
+<div id="wrongGuess">WRONG GUESS :</div>
+<div id="wrongGuessCount">0</div>
+
+<!-- KEYBOARD -->
+
+<div>
+<div id="keyboardBase"></div>
+<div class="keyboardKeys" id="q">Q</div>   
+<div class="keyboardKeys" id="w">W</div>
+<div class="keyboardKeys" id="e">E</div>
+<div class="keyboardKeys" id="r">R</div>
+<div class="keyboardKeys" id="t">T</div>
+<div class="keyboardKeys" id="y">Y</div>
+<div class="keyboardKeys" id="u">U</div>
+<div class="keyboardKeys" id="i">I</div>
+<div class="keyboardKeys" id="o">O</div>
+<div class="keyboardKeys" id="p">P</div>
+<div class="keyboardKeys" id="a">A</div>
+<div class="keyboardKeys" id="s">S</div>
+<div class="keyboardKeys" id="d">D</div>
+<div class="keyboardKeys" id="f">F</div>
+<div class="keyboardKeys" id="g">G</div>
+<div class="keyboardKeys" id="h">H</div>
+<div class="keyboardKeys" id="j">J</div>
+<div class="keyboardKeys" id="k">K</div>
+<div class="keyboardKeys" id="l">L</div>
+<div class="keyboardKeys" id="z">Z</div>
+<div class="keyboardKeys" id="x">X</div>
+<div class="keyboardKeys" id="c">C</div>
+<div class="keyboardKeys" id="v">V</div>
+<div class="keyboardKeys" id="b">B</div>
+<div class="keyboardKeys" id="n">N</div>
+<div class="keyboardKeys" id="m">M</div>
+</div>
+
+<!-- BACKSPACE -->
+<img src="/download.png" alt="Backspace" id="backspace">
+
+<!-- WINNING SCREEN -->
+<div id="winning-screen1"></div>
+<div id="winning-message4" hidden>YOU WON</div>
+<div id="winning-message5" hidden>YOU GUESSED IT CORRECT! </div>
+<div id="winning-message6" hidden>WORD</div>
+<BUtton id="meanin">MEANING</BUtton>
+<button id="rese">RESET</button>
+
+<!-- MEANING -->
+<div id="meaning-backgroun"></div>
+<div id="word-meanin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nam natus incidunt deleniti enim officiis sit in, illo rerum corporis ipsum suscipit error expedita, ratione blanditiis ea beatae eaque quis.</div>
+<div id="word-meaning-wor">WORD</div>
+
+<!-- LOSING SCREEN -->
+<div id="losing-screen1"></div>
+<div id="losing-message4" hidden>YOU LOST</div>
+<div id="losing-message5" hidden>THE WORD WAS :</div>
+<div id="losing-message6" hidden>WORD</div>
+<button id="rese">RESET</button>
+<script src="script.js"></script>    
+</body>
+</html>
